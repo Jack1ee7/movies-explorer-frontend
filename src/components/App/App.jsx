@@ -1,9 +1,13 @@
 import './App.css';
 import Header from '../Header/Header.jsx'
+import Main from '../Main/Main.jsx'
 
 const App = () => {
   return (
-    <Header />
+    <div className='app'>
+      <Header />
+      <Main />
+    </div>
   );
 }
 
