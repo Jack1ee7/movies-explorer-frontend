@@ -1,7 +1,6 @@
 .title__container {
     width: 100%;
     border-bottom: 1px solid #DADADA;
-    margin-bottom: 70px;
 }
 
 .title__title {
@@ -20,9 +19,5 @@
         line-height: 22px;
         letter-spacing: -0.04em;
         margin-bottom: 28px;
-    }
-
-    .title__container {
-        margin-bottom: 60px;
     }
 }

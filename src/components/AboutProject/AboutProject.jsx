@@ -2,10 +2,9 @@ import './AboutProject.css';
 import Title from '../Title/Title.jsx'
 
 const AboutProject = () => {
-    const titleText='О проекте'
     return (
         <section className='aboutproject'>
-            <Title titleText={titleText} />
+            <Title titleText={'О проекте'} />
             <div className='aboutproject__container'>
                 <div>
                     <h3 className='aboutproject__subtitle'>Дипломный проект включал 5 этапов</h3>

@@ -8,6 +8,7 @@
 }
 
 .aboutproject__container {
+    margin-top: 70px;
     display: flex;
     gap: 40px;
     justify-content: space-between;
@@ -137,15 +138,14 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
     .aboutproject {
         background: #202020;
         padding: 70px 18px;
-        display: flex;
-        flex-direction: column;
     }
 
     .aboutproject__container {
+        margin-top: 60px;
         flex-direction: column;
         gap: 56px;
     }
