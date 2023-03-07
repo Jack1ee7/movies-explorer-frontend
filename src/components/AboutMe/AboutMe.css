@@ -6,6 +6,7 @@
     flex-direction: column;
     max-width: 1140px;
     margin: 0 auto;
+    transition: padding 0.2s;
 }
 
 .aboutme__container {
@@ -47,6 +48,7 @@
     mix-blend-mode: normal;
     margin: 0;
     margin-bottom: 99px;
+    max-width: 600px;
 }
 
 .aboutme__github {

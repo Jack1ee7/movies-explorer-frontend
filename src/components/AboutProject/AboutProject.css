@@ -5,6 +5,7 @@
     flex-direction: column;
     max-width: 1140px;
     margin: 0 auto;
+    transition: padding 0.2s;
 }
 
 .aboutproject__container {
@@ -144,7 +145,7 @@
     }
 
     .aboutproject__container {
-        margin-top: 60px;
+        margin: 60px auto 0 auto;
         flex-direction: column;
         gap: 56px;
     }

@@ -8,14 +8,14 @@ import Footer from '../Footer/Footer.jsx'
 
 const Main = () => {
     return (
-        <section className='main'>
+        <div className='main'>
             <Promo />
             <AboutProject />
             <Techs />
             <AboutMe />
             <Portfolio />
             <Footer />
-        </section>
+        </div>
     );
 }
 
