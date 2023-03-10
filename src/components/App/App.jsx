@@ -1,14 +1,21 @@
 import './App.css';
-import Header from '../Header/Header.jsx'
 import Main from '../Main/Main.jsx'
 import NotFound from '../NotFound/NotFound.jsx'
+import Movies from '../Movies/Movies.jsx'
+import Register from '../Register/Register.jsx';
+import Login from '../Login/Login.jsx';
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
     <div className='app'>
-      {/* <Header />
-      <Main /> */}
-      <NotFound />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="/2" element={<Movies />} />
+        <Route path="/sign-up" element={<Register />} />
+        <Route path="/sign-in" element={<Login />} />
+      </Routes>
     </div>
   );
 }

@@ -46,10 +46,11 @@
 }
 
 .techs__techs-container {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    flex-wrap: wrap;
+    width: calc(100vw - 140px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(84px, max-content));
+    grid-gap: 10px;
+    justify-content: center;
 }
 
 .techs__tech-square {
@@ -73,8 +74,7 @@
 
 @media screen and (max-width: 840px) {
     .techs__techs-container {
-        justify-content: center;
-        
+        width: calc(100vw - 100px);
     }
 
     .techs__tech-square {
@@ -136,7 +136,6 @@
     }
 
     .techs__techs-container {
-        max-width: 178px;
-        justify-content: flex-start;
+        width: calc(100vw - 50px);
     }
 }

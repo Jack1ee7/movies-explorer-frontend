@@ -40,7 +40,31 @@
 }
 
 @media screen and (max-width: 768px) {
+    .notfound__error {
+        margin-top: 408px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
     .notfound {
-        
+        height: 100vh;
+        justify-content: space-between;
+    }
+    .notfound__error {
+        font-size: 80px;
+        line-height: 97px;
+        margin-top: 329px;
+        margin-bottom: 10px;
+    }
+
+    .notfound__description {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .notfound__link {
+        margin-top: 0;
+        margin-bottom: 30px;
     }
 }
