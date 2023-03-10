@@ -1,145 +1,145 @@
 .searchform {
-    padding: 70px 70px 48px 70px;
-    max-width: 1140px;
-    margin: 0 auto;
+  padding: 70px 70px 48px 70px;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .searchform__form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 1px solid #424242;
-    padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #424242;
+  padding-bottom: 15px;
 }
 
 .searchform__icon {
-    background-image: url(../../images/search_icon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    min-width: 32px;
-    height: 32px;
-    border: 1px solid #424242;
-    border-radius: 50%;
-    margin-left: 6px;
+  background-image: url(../../images/search_icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 32px;
+  height: 32px;
+  border: 1px solid #424242;
+  border-radius: 50%;
+  margin-left: 6px;
 }
 
 .searchform__input {
-    background-color: #202020;
-    color: #fff;
-    border: none;
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 34px;
-    color: #8B8B8B;
-    padding: 0;
+  background-color: #202020;
+  color: #fff;
+  border: none;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: #8b8b8b;
+  padding: 0;
 }
 
 .searchform__input:focus {
-    outline: none;
+  outline: none;
 }
 
 .searchform__button-submit {
-    background-image: url(../../images/search_icon.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    min-width: 80px;
-    height: 34px;
-    background-color: #4285F4;
-    border: none;
-    border-radius: 48px;
-    padding: 0;
+  background-image: url(../../images/search_icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 80px;
+  height: 34px;
+  background-color: #4285f4;
+  border: none;
+  border-radius: 48px;
+  padding: 0;
 }
 
 .searchform__checkbox-container {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 29px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 29px;
 }
 
 .searchform__checkbox-switch {
-    display: inline-block;
-    height: 20px;
-    position: relative;
-    width: 36px;
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  width: 36px;
 }
 
 .searchform__checkbox-switch input {
-    display: none;
+  display: none;
 }
 
 .searchform__checkbox-slider {
-    background: #424242;
-    /* изначальный цвет #202020 сливается с фоном*/
-    box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.08), 0px 4px 8px rgba(50, 50, 71, 0.06);
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
-    border-radius: 16px;
+  background: #424242;
+  /* изначальный цвет #202020 сливается с фоном*/
+  box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.08),
+    0px 4px 8px rgba(50, 50, 71, 0.06);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+  border-radius: 16px;
 }
 
 .searchform__checkbox-slider:before {
-    background-color: #202020;
-    ;
-    bottom: 2px;
-    content: "";
-    height: 16px;
-    left: 2px;
-    position: absolute;
-    transition: .4s;
-    width: 16px;
-    border-radius: 16px;
+  background-color: #202020;
+  bottom: 2px;
+  content: "";
+  height: 16px;
+  left: 2px;
+  position: absolute;
+  transition: 0.4s;
+  width: 16px;
+  border-radius: 16px;
 }
 
-input:checked+.searchform__checkbox-slider:before {
-    transform: translateX(16px);
-    background-color: #3DDC84;
+input:checked + .searchform__checkbox-slider:before {
+  transform: translateX(16px);
+  background-color: #3ddc84;
 }
 
 .searchform__checkbox-caption {
-    font-size: 14px;
-    line-height: 18px;
-    color: #FFFFFF;
-    margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
-    .searchform {
-        padding: 86px 30px 61px;
-    }
+  .searchform {
+    padding: 86px 30px 61px;
+  }
 }
 
 @media screen and (max-width: 450px) {
-    .searchform {
-        padding: 92px 14px 50px;
-    }
+  .searchform {
+    padding: 92px 14px 50px;
+  }
 
-    .searchform__icon {
-        display: none;
-    }
+  .searchform__icon {
+    display: none;
+  }
 
-    .searchform__input {
-        text-align: left;
-        font-size: 18px;
-        line-height: 22px;
-    }
+  .searchform__input {
+    text-align: left;
+    font-size: 18px;
+    line-height: 22px;
+  }
 
-    .searchform__form {
-        padding-bottom: 9px;
-    }
+  .searchform__form {
+    padding-bottom: 9px;
+  }
 
-    .searchform__checkbox-caption {
-        font-size: 11px;
-        line-height: 18px;
-    }
+  .searchform__checkbox-caption {
+    font-size: 11px;
+    line-height: 18px;
+  }
 
-    .searchform__checkbox-container {
-        margin-top: 42px;
-    }
+  .searchform__checkbox-container {
+    margin-top: 42px;
+  }
 }

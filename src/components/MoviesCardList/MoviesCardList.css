@@ -1,65 +1,65 @@
 .moviescardlist {
-    padding: 70px 70px 80px 70px;
-    max-width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+  padding: 70px 70px 80px 70px;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .moviescardlist__list {
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(364px, max-content));
-    grid-column-gap: 24px;
-    grid-row-gap: 37px;
-    justify-content: center;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(364px, max-content));
+  grid-column-gap: 24px;
+  grid-row-gap: 37px;
+  justify-content: center;
 }
 
 .moviescardlist__load-more-button {
-    align-self: center;
-    background: #2F2F2F;
-    border-radius: 6px;
-    border: none;
-    width: 320px;
-    height: 36px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 0;
-    margin-top: 60px;
-    cursor: pointer;
+  align-self: center;
+  background: #2f2f2f;
+  border-radius: 6px;
+  border: none;
+  width: 320px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #ffffff;
+  padding: 0;
+  margin-top: 60px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
-    .moviescardlist {
-        padding: 70px 30px 80px 30px;
-    }
+  .moviescardlist {
+    padding: 70px 30px 80px 30px;
+  }
 
-    .moviescardlist__list {
-        grid-template-columns: repeat(auto-fit, minmax(339px, max-content));
-        grid-gap: 30px;
-    }
+  .moviescardlist__list {
+    grid-template-columns: repeat(auto-fit, minmax(339px, max-content));
+    grid-gap: 30px;
+  }
 
-    .moviescardlist__load-more-button {
-        margin-top: 80px;
-    }
+  .moviescardlist__load-more-button {
+    margin-top: 80px;
+  }
 }
 
 @media screen and (max-width: 450px) {
-    .moviescardlist {
-        padding: 40px 10px 80px 10px;
-    }
+  .moviescardlist {
+    padding: 40px 10px 80px 10px;
+  }
 
-    .moviescardlist__list {
-        grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
-        grid-row-gap: 14px;
-    }
+  .moviescardlist__list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+    grid-row-gap: 14px;
+  }
 
-    .moviescardlist__load-more-button {
-        width: 240px;
-        margin-top: 76px;
-    }
+  .moviescardlist__load-more-button {
+    width: 240px;
+    margin-top: 76px;
+  }
 }

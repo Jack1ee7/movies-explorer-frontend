@@ -1,14 +1,14 @@
-import './App.css';
-import Main from '../Main/Main.jsx'
-import NotFound from '../NotFound/NotFound.jsx'
-import Movies from '../Movies/Movies.jsx'
-import Register from '../Register/Register.jsx';
-import Login from '../Login/Login.jsx';
+import "./App.css";
+import Main from "../Main/Main.jsx";
+import NotFound from "../NotFound/NotFound.jsx";
+import Movies from "../Movies/Movies.jsx";
+import Register from "../Register/Register.jsx";
+import Login from "../Login/Login.jsx";
 import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className='app'>
+    <div className="app">
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="*" element={<NotFound />} />
@@ -18,6 +18,6 @@ const App = () => {
       </Routes>
     </div>
   );
-}
+};
 
 export default App;
