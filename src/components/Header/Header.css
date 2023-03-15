@@ -7,10 +7,15 @@
   max-width: 1140px;
   margin: 0 auto;
   transition: padding 0.2s;
+  position: relative;
 }
 
-.header__background {
+.header__background_color_blue {
   background: #073042;
+}
+
+.header__background_color_gray {
+  background: #202020;
 }
 
 .header__login-button {
@@ -41,6 +46,44 @@
 .header__link:hover {
   opacity: 0.7;
   transition: opacity 0.2s;
+}
+
+.header__link-films {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.header__link-films:hover {
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.header__account-container {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.header__account-icon {
+  background-image: url("../../images/account-icon.svg");
+  background-color: #313131;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  width: 26px;
+  height: 26px;
+}
+
+.header__movies-container {
+  display: flex;
+  gap: 16px;
+  position: fixed;
+  left: calc((100vw / 2) - 105px)
 }
 
 .header__container {

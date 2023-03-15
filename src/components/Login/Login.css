@@ -20,6 +20,7 @@
 }
 
 .login__input-caption {
+  display: flex;
   font-size: 10px;
   line-height: 12px;
   color: #8b8b8b;
@@ -78,6 +79,12 @@
 .login__link {
   color: #4285f4;
   text-decoration: none;
+}
+
+.login__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 @media screen and (max-width: 450px) {

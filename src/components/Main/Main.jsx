@@ -9,15 +9,15 @@ import Header from "../Header/Header.jsx";
 
 const Main = () => {
   return (
-    <div className="main">
-      <Header />
+    <main className="main">
+      <Header currentPage='main' isLoggedIn={true}/>
       <Promo />
       <AboutProject />
       <Techs />
       <AboutMe />
       <Portfolio />
       <Footer />
-    </div>
+    </main>
   );
 };
 
